@@ -4,12 +4,14 @@ import { FaUsers } from "react-icons/fa";
 import { FaPercentage } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa6";
+import SearchAndProfile from "./SearchAndProfile";
 
 export default function Cards() {
   return (
     <>
       <section className="bg-sky-500 h-96 w-screen">
-        <div className="cards md:flex justify-evenly items-center">
+        <SearchAndProfile />
+        <div className="cards md:flex justify-evenly items-center mt-12">
           <div className="card bg-white shadow-md p-4 rounded-md w-72">
             <div className="card-body">
               <div className="flex justify-between mb-5">
@@ -46,7 +48,7 @@ export default function Cards() {
 
               <p className="flex gap-2 text-gray-500">
                 <span className="flex items-center text-red-500">
-                  <FaArrowUp />
+                  <FaArrowDown />
                   3.48%
                 </span>{" "}
                 Since last week
@@ -68,7 +70,7 @@ export default function Cards() {
 
               <p className="flex gap-2 text-gray-500">
                 <span className="flex items-center text-red-500">
-                  <FaArrowUp />
+                  <FaArrowDown />
                   1.10%
                 </span>{" "}
                 Since yesterday
