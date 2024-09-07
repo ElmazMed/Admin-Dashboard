@@ -1,7 +1,9 @@
+import Home from "./pages/Home";
+
 export default function App() {
   return (
     <>
-      <h2 className="text-orange-600 text-center">Hello world</h2>
+      <Home />
     </>
   );
 }
