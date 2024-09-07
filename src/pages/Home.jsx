@@ -14,7 +14,7 @@ export default function Home() {
         <nav className="bg-white shadow-md h-screen  w-72  flex flex-col justify-between">
           <div className="p-8">
             <div className="logo mb-20">
-              <h1 className="text-3xl text-sky-500 font-bold uppercase">
+              <h1 className="text-3xl text-center text-sky-500 font-bold uppercase">
                 Admin.
               </h1>
             </div>
