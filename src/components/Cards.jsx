@@ -9,7 +9,7 @@ import SearchAndProfile from "./SearchAndProfile";
 export default function Cards() {
   return (
     <>
-      <section className="bg-sky-500 h-96 w-screen p-8 flex flex-col gap-16">
+      <section className="bg-sky-500 h-96 p-8 flex flex-col gap-16">
         <SearchAndProfile />
         <div className="cards md:flex justify-evenly items-center ">
           <div className="card bg-white shadow-md p-4 rounded-md w-72">

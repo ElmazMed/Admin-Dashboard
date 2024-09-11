@@ -1,0 +1,108 @@
+import React from "react";
+import { Line } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export default function LineChart() {
+  const data = {
+    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    datasets: [
+      {
+        label: "",
+        data: [0, 20, 10, 30, 20, 40, 30, 50, 40, 60],
+        fill: false,
+        backgroundColor: "transparent",
+        borderColor: "#5e72e4",
+        pointBorderColor: "transparent",
+        tension: 0.3,
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+        position: "top",
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: "#dbdbdb",
+        },
+        border: {
+          display: false,
+        },
+        grid: {
+          drawBorder: false,
+          display: false,
+        },
+      },
+
+      y: {
+        border: {
+          display: false,
+        },
+        grid: {
+          offset: true,
+          display: false,
+        },
+        ticks: {
+          color: "#dbdbdb",
+          callback: (value) => "$" + value + "K",
+        },
+      },
+    },
+  };
+  return (
+    <>
+      <div className="p-8 -mt-24">
+        <div className="bg-blue-950 p-8 rounded-md">
+          <div className="flex justify-between mb-10">
+            <div>
+              <span className="uppercase text-sm text-gray-300">overview</span>
+              <h2 className="text-white text-xl">Sales value</h2>
+            </div>
+            <div className="flex gap-3">
+              <button
+                type="button"
+                className="text-white bg-indigo-500 px-5 rounded-md"
+              >
+                Month
+              </button>
+              <button
+                type="button"
+                className="text-indigo-500 bg-white px-5 rounded-md"
+              >
+                Week
+              </button>
+            </div>
+          </div>
+          <div>
+            <Line data={data} options={options} />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
