@@ -76,7 +76,7 @@ export default function LineChart() {
   };
   return (
     <>
-      <div className="p-8 -mt-24">
+      <div className="p-8">
         <div className="bg-blue-950 p-8 rounded-md">
           <div className="flex justify-between mb-10">
             <div>
@@ -86,13 +86,13 @@ export default function LineChart() {
             <div className="flex gap-3">
               <button
                 type="button"
-                className="text-white bg-indigo-500 px-5 rounded-md"
+                className="text-white text-sm bg-indigo-500 px-4 h-10 rounded-md"
               >
                 Month
               </button>
               <button
                 type="button"
-                className="text-indigo-500 bg-white px-5 rounded-md"
+                className="text-indigo-500 text-sm bg-white px-4 h-10 rounded-md"
               >
                 Week
               </button>
