@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <div className="w-10/12">
+        <div className="w-10/12 ">
           <Cards />
           <Dashboard />
         </div>

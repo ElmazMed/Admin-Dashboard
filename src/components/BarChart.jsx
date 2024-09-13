@@ -24,9 +24,12 @@ export default function BarChart() {
     labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [
       {
-        label: "Dataset 1",
-        data: [0, 10, 20, 30],
-        backgroundColor: "#FF6384",
+        label: "Sales",
+        data: [25, 20, 30, 22, 17, 29],
+        backgroundColor: "#fb6340",
+        maxBarThickness: 10,
+        borderRadius: 10,
+        borderSkipped: false,
       },
     ],
   };
@@ -39,6 +42,7 @@ export default function BarChart() {
         position: "top",
       },
     },
+
     scales: {
       x: {
         border: {
@@ -50,6 +54,16 @@ export default function BarChart() {
         stacked: true,
       },
       y: {
+        ticks: {
+          beginAtZero: true,
+          padding: 10,
+          callback: function (value) {
+            if (!(value % 10)) {
+              return value;
+            }
+          },
+        },
+
         border: {
           display: false,
         },
@@ -62,12 +76,25 @@ export default function BarChart() {
   };
 
   return (
-    <div className="p-8">
-      <div className="bg-white shadow-md w-full h-96 p-8 rounded-md">
-        <span className="uppercase text-sm text-gray-500">Performance</span>
-        <h2 className="text-black text-xl mb-12">Total orders</h2>
-        <Bar data={data} options={options} />
+    <>
+      <div
+        className="bg-white shadow-md p-8 rounded-md"
+        style={{ height: "33rem" }}
+      >
+        <div>
+          <span className="uppercase text-sm text-gray-500">Performance</span>
+          <h2 className="text-black text-xl mb-16">Total orders</h2>
+        </div>
+        <div>
+          <Bar
+            data={data}
+            options={options}
+            height={437}
+            width={408}
+            style={{ height: "350px", width: "327px" }}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
