@@ -3,3 +3,30 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  background-color: #f5f7fc;
+}
+
+th {
+  color: #8898aa;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+th,
+td {
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+}
+tr {
+  border-bottom: 1px solid rgba(205, 205, 205, 0.579);
+}
+td {
+  color: #5c6786;
+  font-size: 0.9rem;
+}
+
+.table-head {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.579);
+}
