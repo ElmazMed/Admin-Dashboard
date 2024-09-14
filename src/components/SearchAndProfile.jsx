@@ -27,7 +27,7 @@ export default function SearchAndProfile() {
 
   return (
     <>
-      <div className="flex gap-5 justify-end relative">
+      <div className="flex flex-col sm:flex-row gap-5 sm:justify-end relative">
         <div className="search flex items-center gap-2 rounded-3xl border-2 border-gray-200  w-fit p-2">
           <IoSearch className="text-white" />
           <input
@@ -48,7 +48,7 @@ export default function SearchAndProfile() {
         </button>
         <div
           ref={menuRef}
-          className="menu bg-white p-3 rounded-md absolute shadow-md top-10 w-52 right-0 transition-all"
+          className="menu bg-white p-3 rounded-md absolute shadow-md sm:top-10 top-24 w-52 sm:right-0 transition-all"
           style={{ display: visible }}
         >
           <span className="text-xs text-slate-700 ">Welcome!</span>

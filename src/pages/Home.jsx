@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <main className="flex">
-        <nav className="overflow-y-auto w-2/12 relative">
+        <nav className="overflow-y-auto w-2/12 mr-10 relative hidden sm:block">
           <div className="fixed flex flex-col w-2/12 justify-between bg-white shadow-md h-screen">
             <div className="p-8">
               <div className="logo mb-20">
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <div className="w-10/12 ">
+        <div className="w-full ">
           <Cards />
           <Dashboard />
         </div>

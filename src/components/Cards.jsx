@@ -9,10 +9,10 @@ import SearchAndProfile from "./SearchAndProfile";
 export default function Cards() {
   return (
     <>
-      <section className="bg-sky-500 h-96 p-8 flex flex-col gap-16">
+      <section className="bg-sky-500 sm:h-96 h-1/3 sm:p-8 p-4 flex flex-col gap-16">
         <SearchAndProfile />
-        <div className="cards md:flex gap-4 items-center ">
-          <div className="card bg-white shadow-md p-4 rounded-md w-72">
+        <div className="cards flex flex-wrap gap-4 justify-between items-center ">
+          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
@@ -34,7 +34,7 @@ export default function Cards() {
             </div>
           </div>
 
-          <div className="card bg-white shadow-md p-4 rounded-md w-72">
+          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
@@ -56,7 +56,7 @@ export default function Cards() {
             </div>
           </div>
 
-          <div className="card bg-white shadow-md p-4 rounded-md w-72">
+          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
@@ -78,7 +78,7 @@ export default function Cards() {
             </div>
           </div>
 
-          <div className="card bg-white shadow-md p-4 rounded-md w-72">
+          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
