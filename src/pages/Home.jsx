@@ -5,17 +5,35 @@ import { FaUser } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa6";
 import { MdOutlineContactSupport } from "react-icons/md";
 import { IoIosRocket } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
 import Cards from "../components/Cards";
 import Dashboard from "./Dashboard";
+import user from "../assets/pexels-justin-shaifer-501272-1222271.jpg";
 
 export default function Home() {
   return (
     <>
-      <main className="flex">
-        <nav className="overflow-y-auto w-2/12 mr-10 relative hidden sm:block">
-          <div className="fixed flex flex-col w-2/12 justify-between bg-white shadow-md h-screen">
-            <div className="p-8">
-              <div className="logo mb-20">
+      <main className="sm:flex">
+        <div className=" mobile-menu bg-white w-full p-6 flex justify-between items-center">
+          <button className="text-3xl" type="button">
+            <RxHamburgerMenu />
+          </button>
+          <div className="logo">
+            <h1 className="text-3xl text-center text-sky-500 font-bold uppercase">
+              Admin.
+            </h1>
+          </div>
+          <button type="button">
+            <div className="icon">
+              <img src={user} alt="user" className="rounded-full w-8 h-8 " />
+            </div>
+          </button>
+        </div>
+
+        <nav className="sm:overflow-y-auto sm:w-2/12 w-11/12 sm:mr-10 absolute top-6 left-0 right-0 mx-auto sm:relative">
+          <div className="sm:fixed flex flex-col sm:w-2/12 w-full justify-between bg-white shadow-md sm:h-screen">
+            <div className="sm:p-8 p-4">
+              <div className="logo sm:mb-20 mb-7">
                 <h1 className="text-3xl text-center text-sky-500 font-bold uppercase">
                   Admin.
                 </h1>
@@ -65,6 +83,7 @@ export default function Home() {
             </div>
           </div>
         </nav>
+
         <div className="w-full ">
           <Cards />
           <Dashboard />

@@ -22,27 +22,27 @@ export default function SocialTraffic() {
             </thead>
             <tbody>
               <tr>
-                <td>/website/</td>
+                <td>Facebook</td>
                 <td>4,569</td>
                 <td>340</td>
               </tr>
               <tr>
-                <td>/website/index.html</td>
+                <td>Google</td>
                 <td>3,985</td>
                 <td>319</td>
               </tr>
               <tr>
-                <td>/website/dashboard.html</td>
+                <td>Instagram</td>
                 <td>3,513</td>
                 <td>249</td>
               </tr>
               <tr>
-                <td>/website/tables.html/website/</td>
+                <td>Tiktok</td>
                 <td>2,050</td>
                 <td>147</td>
               </tr>
               <tr>
-                <td>/website/profile.html</td>
+                <td>Pinterest</td>
                 <td>1,795</td>
                 <td>190</td>
               </tr>

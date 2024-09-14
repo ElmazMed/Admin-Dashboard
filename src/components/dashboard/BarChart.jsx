@@ -78,7 +78,7 @@ export default function BarChart() {
   return (
     <>
       <div
-        className="bg-white shadow-md p-8 rounded-md"
+        className="bg-white shadow-md sm:p-8 p-4 rounded-md"
         style={{ height: "33rem" }}
       >
         <div>

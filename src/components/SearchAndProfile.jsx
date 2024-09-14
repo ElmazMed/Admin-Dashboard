@@ -27,7 +27,7 @@ export default function SearchAndProfile() {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row gap-5 sm:justify-end relative">
+      <div className="sm:flex hidden gap-5 justify-end relative">
         <div className="search flex items-center gap-2 rounded-3xl border-2 border-gray-200  w-fit p-2">
           <IoSearch className="text-white" />
           <input
