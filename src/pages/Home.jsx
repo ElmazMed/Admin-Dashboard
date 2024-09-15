@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="sm:flex">
+      <main className="sm:flex relative">
         <div className=" mobile-menu bg-white w-full p-6 flex justify-between sm:hidden items-center">
           <button
             className="text-3xl text-gray-400"
