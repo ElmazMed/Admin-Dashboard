@@ -4,13 +4,13 @@ import { FaUsers } from "react-icons/fa";
 import { FaPercentage } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa6";
-import SearchAndProfile from "./SearchAndProfile";
+import Search from "./Search";
 
 export default function Cards() {
   return (
     <>
       <section className="bg-sky-500 sm:h-96 h-1/3 sm:p-8 p-4 flex flex-col gap-16">
-        <SearchAndProfile />
+        <Search />
         <div className="cards flex flex-wrap gap-4 justify-between items-center ">
           <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">

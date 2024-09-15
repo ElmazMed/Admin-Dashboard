@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CgScreen } from "react-icons/cg";
 import { FaUser } from "react-icons/fa";
@@ -10,14 +10,20 @@ import { AiOutlineClose } from "react-icons/ai";
 import { IoSearch } from "react-icons/io5";
 import Cards from "../components/Cards";
 import Dashboard from "./Dashboard";
-import user from "../assets/pexels-justin-shaifer-501272-1222271.jpg";
+import ProfileIcon from "../components/ProfileIcon";
 
 export default function Home() {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
   return (
     <>
       <main className="sm:flex">
         <div className=" mobile-menu bg-white w-full p-6 flex justify-between sm:hidden items-center">
-          <button className="text-3xl text-gray-400" type="button">
+          <button
+            className="text-3xl text-gray-400"
+            type="button"
+            onClick={() => setIsMenuVisible(true)}
+          >
             <RxHamburgerMenu />
           </button>
           <div className="logo">
@@ -25,14 +31,16 @@ export default function Home() {
               Admin.
             </h1>
           </div>
-          <button type="button">
-            <div className="icon">
-              <img src={user} alt="user" className="rounded-full w-8 h-8 " />
-            </div>
-          </button>
+          <ProfileIcon />
         </div>
 
-        <nav className="sm:overflow-y-auto sm:w-2/12 w-11/12 sm:mr-10 absolute sm:top-0 top-6 left-0 right-0 mx-auto sm:relative">
+        <nav
+          className={
+            isMenuVisible
+              ? "sm:overflow-y-auto sm:w-2/12 w-11/12 sm:mr-10 absolute sm:top-0 top-6 left-0 right-0 mx-auto sm:relative"
+              : "hidden"
+          }
+        >
           <div className="sm:fixed flex flex-col sm:w-2/12 w-full justify-between bg-white shadow-md sm:h-screen">
             <div className="sm:p-8 p-4">
               <div className="logo sm:mb-20 flex justify-between sm:block mb-7">
@@ -42,6 +50,7 @@ export default function Home() {
                 <button
                   className="text-3xl sm:hidden text-gray-400"
                   type="button"
+                  onClick={() => setIsMenuVisible(false)}
                 >
                   <AiOutlineClose />
                 </button>
