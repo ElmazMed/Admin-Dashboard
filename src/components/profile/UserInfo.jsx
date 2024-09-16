@@ -7,27 +7,33 @@ export default function UserInfo() {
         <div className="profile-img -mt-16 ">
           <img src={user} alt="user" className="rounded-full h-24 w-24" />
         </div>
-        <div className="flex">
-          <div>
-            <h4>22</h4>
-            <span>Friends</span>
+        <div className="flex gap-8 mt-10 mb-7">
+          <div className="flex flex-col items-center">
+            <h4 className="font-medium text-slate-600 text-xl">22</h4>
+            <span className="text-center opacity-60 font-medium">Friends</span>
           </div>
-          <div>
-            <h4>10</h4>
-            <span>Photos</span>
+          <div className="flex flex-col items-center">
+            <h4 className="font-medium text-slate-600 text-xl">10</h4>
+            <span className="text-center opacity-60 font-medium">Photos</span>
           </div>
-          <div>
-            <h4>84</h4>
-            <span>Comments</span>
+          <div className="flex flex-col items-center">
+            <h4 className="font-medium text-slate-600 text-xl">84</h4>
+            <span className="text-center opacity-60 font-medium">Comments</span>
           </div>
         </div>
         <div className="flex flex-col">
-          <h2>Mohamed Elmazgour</h2>
-          <span>Casablanca, Morocco</span>
-          <h3>Full stack - Web Developer</h3>
+          <h2 className="text-center text-slate-600 font-medium mb-2">
+            Mohamed Elmazgour
+          </h2>
+          <span className="text-center opacity-70 text-sm">
+            Casablanca, Morocco
+          </span>
+          <h3 className="mt-7 text-slate-600 text-center">
+            Full stack - Web Developer
+          </h3>
         </div>
-        <hr />
-        <p className="text-center opacity-70">
+        <hr className="w-full border-t-1 border-gray-200 my-4" />
+        <p className="text-center opacity-60 leading-7 font-light">
           I thrive on turning ideas into digital magic, blending tech savvy with
           a touch of artistry. I welcome challenges and thrive on
           problem-solving.

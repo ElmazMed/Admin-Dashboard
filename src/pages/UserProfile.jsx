@@ -14,7 +14,7 @@ export default function UserProfile() {
 
         <div className="w-full">
           <div
-            className="h-custom-h bg-cover bg-center sm:p-8 p-4 relative"
+            className="h-custom-h bg-cover bg-center sm:p-8 p-4 -z-10 relative"
             style={{ backgroundImage: `url(${background})` }}
           >
             <div className="z-30 relative">
@@ -31,7 +31,7 @@ export default function UserProfile() {
             </div>
             <div className="overlay bg-blue-950 absolute h-full w-full bg-opacity-80 top-0 left-0 z-0"></div>
           </div>
-          <div className="flex sm:p-8 p-4 gap-5">
+          <div className="sm:flex sm:p-8 p-4 gap-5 -mt-32">
             <div className="w-8/12">
               <UserForm />
             </div>
