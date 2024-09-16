@@ -24,27 +24,82 @@ export default function SocialTraffic() {
               <tr>
                 <td>Facebook</td>
                 <td>4,569</td>
-                <td>340</td>
+                <td className="flex items-center gap-3">
+                  60%
+                  <div className="bg-gray-300 rounded-md h-1 w-36">
+                    <div
+                      className="bg-red-500 h-1 w-3/5 rounded-md"
+                      aria-valuemax={100}
+                      aria-valuemin={0}
+                      aria-valuenow={60}
+                      role="progress"
+                    ></div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Google</td>
                 <td>3,985</td>
-                <td>319</td>
+                <td className="flex items-center gap-3">
+                  20%
+                  <div className="bg-gray-300 rounded-md h-1 w-36">
+                    <div
+                      className="bg-orange-500 h-1 w-1/5 rounded-md"
+                      aria-valuemax={100}
+                      aria-valuemin={0}
+                      aria-valuenow={20}
+                      role="progress"
+                    ></div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Instagram</td>
                 <td>3,513</td>
-                <td>249</td>
+                <td className="flex items-center gap-3">
+                  75%
+                  <div className="bg-gray-300 rounded-md h-1 w-36">
+                    <div
+                      className="bg-blue-500 h-1 w-3/4 rounded-md"
+                      aria-valuemax={100}
+                      aria-valuemin={0}
+                      aria-valuenow={75}
+                      role="progress"
+                    ></div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Tiktok</td>
-                <td>2,050</td>
-                <td>147</td>
+                <td>7,230</td>
+                <td className="flex items-center gap-3">
+                  80%
+                  <div className="bg-gray-300 rounded-md h-1 w-36">
+                    <div
+                      className="bg-green-500 h-1 w-4/5 rounded-md"
+                      aria-valuemax={100}
+                      aria-valuemin={0}
+                      aria-valuenow={80}
+                      role="progress"
+                    ></div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Pinterest</td>
                 <td>1,795</td>
-                <td>190</td>
+                <td className="flex items-center gap-3">
+                  33%
+                  <div className="bg-gray-300 rounded-md h-1 w-36">
+                    <div
+                      className="bg-orange-500 h-1 w-1/3 rounded-md"
+                      aria-valuemax={100}
+                      aria-valuemin={0}
+                      aria-valuenow={33}
+                      role="progress"
+                    ></div>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>

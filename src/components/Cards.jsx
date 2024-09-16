@@ -9,10 +9,7 @@ import Search from "./Search";
 export default function Cards() {
   return (
     <>
-      <section
-        className="bg-sky-500 sm:h-96 sm:p-8 p-4 flex flex-col gap-16"
-        style={{ height: "40rem" }}
-      >
+      <section className="bg-sky-500 sm:h-96 h-custom-h sm:p-8 p-4 flex flex-col gap-16">
         <Search />
         <div className="cards flex flex-wrap gap-4 justify-between items-center ">
           <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
