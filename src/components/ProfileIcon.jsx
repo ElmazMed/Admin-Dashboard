@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { TbLogout2 } from "react-icons/tb";
 import { useEffect, useRef, useState } from "react";
-import user from "../assets/pexels-justin-shaifer-501272-1222271.jpg";
+import userImg from "../assets/pexels-justin-shaifer-501272-1222271.jpg";
+import { UserContext } from "./UserContext";
 
 export default function ProfileIcon() {
   const [visible, setVisible] = useState("none");
   const menuRef = useRef(null);
-
+  const user = useContext(UserContext);
   const handleUserBtn = (e) => {
     e.stopPropagation();
     setVisible(visible === "none" ? "block" : "none");
@@ -33,9 +34,9 @@ export default function ProfileIcon() {
           className="flex items-center gap-3"
         >
           <div className="icon">
-            <img src={user} alt="user" className="rounded-full w-8 h-8 " />
+            <img src={userImg} alt="user" className="rounded-full w-8 h-8 " />
           </div>
-          <span className="text-white sm:block hidden">Mohamed Elmazgour</span>
+          <span className="text-white sm:block hidden">{`${user.firstName} ${user.lastName}`}</span>
         </button>
         <div
           ref={menuRef}
