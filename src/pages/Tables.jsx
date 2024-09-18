@@ -12,15 +12,18 @@ export default function Tables() {
         <div className="w-full">
           <Cards />
 
-          <div className="table-content sm:p-8">
+          <div className="table-content sm:-mt-20 -mt-14 sm:p-8 p-4">
             <div
               className="table-head flex justify-between items-center shadow-md rounded-t-md"
-              style={{ backgroundColor: "#172b4d" }}
+              style={{
+                backgroundColor: "#172b4d",
+                borderBottom: "1px solid #4276c1",
+              }}
             >
               <h3 className="font-medium text-white text-lg">Card table</h3>
             </div>
             <div className="overflow-auto">
-              <table className="projects-table table-auto shadow-md w-full rounded-md">
+              <table className="projects-table overflow-hidden table-auto shadow-md w-full rounded-md">
                 <thead className="relative">
                   <tr className="bg-indigo-900">
                     <th className="uppercase flex text-left">Projects</th>
@@ -33,17 +36,17 @@ export default function Tables() {
                 <tbody>
                   <tr>
                     <td>
-                      <div className="flex items-center gap-3 ">
+                      <div className="flex items-center w-52 gap-3">
                         <div className="h-11 w-11 bg-white rounded-full p-2">
                           <img src={icon} />
-                        </div>{" "}
+                        </div>
                         <span>Design System</span>
                       </div>
                     </td>
-                    <td>$2,500 USD</td>
+                    <td>$2,500</td>
                     <td>
-                      <div className="flex items-center gap-1 ">
-                        <div className="bg-red-600 h-1 w-1 rounded-md"></div>
+                      <div className="flex items-center  w-44 gap-1 ">
+                        <div className="bg-orange-600 h-1 w-1 rounded-md"></div>
                         <span>pending</span>
                       </div>
                     </td>
@@ -70,7 +73,7 @@ export default function Tables() {
                         <span>60%</span>
                         <div className="bg-gray-300 rounded-md h-1 w-36">
                           <div
-                            className="bg-red-500 h-1 w-3/5 rounded-md"
+                            className="bg-orange-500 h-1 w-3/5 rounded-md"
                             aria-valuemax={100}
                             aria-valuemin={0}
                             aria-valuenow={60}
@@ -82,18 +85,18 @@ export default function Tables() {
                   </tr>
                   <tr>
                     <td>
-                      <div className="flex items-center gap-3 ">
+                      <div className="flex items-center w-52 gap-3 ">
                         <div className="h-11 w-11 bg-white rounded-full p-2">
                           <img src={icon} />
                         </div>{" "}
                         <span>Design System</span>
                       </div>
                     </td>
-                    <td>$2,500 USD</td>
+                    <td>$2,500</td>
                     <td>
-                      <div className="flex items-center gap-1 ">
-                        <div className="bg-red-600 h-1 w-1 rounded-md"></div>
-                        <span>pending</span>
+                      <div className="flex items-center  w-44 gap-1 ">
+                        <div className="bg-green-600 h-1 w-1 rounded-md"></div>
+                        <span>completed</span>
                       </div>
                     </td>
                     <td>
@@ -116,13 +119,13 @@ export default function Tables() {
                     </td>
                     <td>
                       <div className="flex items-center gap-2">
-                        <span>60%</span>
+                        <span>100%</span>
                         <div className="bg-gray-300 rounded-md h-1 w-36">
                           <div
-                            className="bg-red-500 h-1 w-3/5 rounded-md"
+                            className="bg-green-500 h-1 w-full rounded-md"
                             aria-valuemax={100}
                             aria-valuemin={0}
-                            aria-valuenow={60}
+                            aria-valuenow={100}
                             role="progress"
                           ></div>
                         </div>
@@ -131,18 +134,18 @@ export default function Tables() {
                   </tr>
                   <tr>
                     <td>
-                      <div className="flex items-center gap-3 ">
+                      <div className="flex items-center w-52 gap-3 ">
                         <div className="h-11 w-11 bg-white rounded-full p-2">
                           <img src={icon} />
                         </div>{" "}
                         <span>Design System</span>
                       </div>
                     </td>
-                    <td>$2,500 USD</td>
+                    <td>$2,500</td>
                     <td>
-                      <div className="flex items-center gap-1 ">
+                      <div className="flex items-center  w-44 gap-1 ">
                         <div className="bg-red-600 h-1 w-1 rounded-md"></div>
-                        <span>pending</span>
+                        <span>delayed</span>
                       </div>
                     </td>
                     <td>
@@ -165,13 +168,13 @@ export default function Tables() {
                     </td>
                     <td>
                       <div className="flex items-center gap-2">
-                        <span>60%</span>
+                        <span>75%</span>
                         <div className="bg-gray-300 rounded-md h-1 w-36">
                           <div
-                            className="bg-red-500 h-1 w-3/5 rounded-md"
+                            className="bg-red-500 h-1 w-3/4 rounded-md"
                             aria-valuemax={100}
                             aria-valuemin={0}
-                            aria-valuenow={60}
+                            aria-valuenow={75}
                             role="progress"
                           ></div>
                         </div>
@@ -180,18 +183,18 @@ export default function Tables() {
                   </tr>
                   <tr>
                     <td>
-                      <div className="flex items-center gap-3 ">
+                      <div className="flex items-center w-52 gap-3 ">
                         <div className="h-11 w-11 bg-white rounded-full p-2">
                           <img src={icon} />
                         </div>{" "}
                         <span>Design System</span>
                       </div>
                     </td>
-                    <td>$2,500 USD</td>
+                    <td>$2,500</td>
                     <td>
-                      <div className="flex items-center gap-1 ">
-                        <div className="bg-red-600 h-1 w-1 rounded-md"></div>
-                        <span>pending</span>
+                      <div className="flex items-center  w-44 gap-1 ">
+                        <div className="bg-blue-600 h-1 w-1 rounded-md"></div>
+                        <span>on schedule</span>
                       </div>
                     </td>
                     <td>
@@ -214,13 +217,13 @@ export default function Tables() {
                     </td>
                     <td>
                       <div className="flex items-center gap-2">
-                        <span>60%</span>
+                        <span>90%</span>
                         <div className="bg-gray-300 rounded-md h-1 w-36">
                           <div
-                            className="bg-red-500 h-1 w-3/5 rounded-md"
+                            className="bg-blue-500 h-1 w-11/12 rounded-md"
                             aria-valuemax={100}
                             aria-valuemin={0}
-                            aria-valuenow={60}
+                            aria-valuenow={90}
                             role="progress"
                           ></div>
                         </div>
@@ -229,18 +232,18 @@ export default function Tables() {
                   </tr>
                   <tr>
                     <td>
-                      <div className="flex items-center gap-3 ">
+                      <div className="flex items-center w-52 gap-3 ">
                         <div className="h-11 w-11 bg-white rounded-full p-2">
                           <img src={icon} />
                         </div>{" "}
                         <span>Design System</span>
                       </div>
                     </td>
-                    <td>$2,500 USD</td>
+                    <td>$2,500</td>
                     <td>
-                      <div className="flex items-center gap-1 ">
-                        <div className="bg-red-600 h-1 w-1 rounded-md"></div>
-                        <span>pending</span>
+                      <div className="flex items-center  w-44 gap-1 ">
+                        <div className="bg-green-600 h-1 w-1 rounded-md"></div>
+                        <span>completed</span>
                       </div>
                     </td>
                     <td>
@@ -263,13 +266,13 @@ export default function Tables() {
                     </td>
                     <td>
                       <div className="flex items-center gap-2">
-                        <span>60%</span>
+                        <span>100%</span>
                         <div className="bg-gray-300 rounded-md h-1 w-36">
                           <div
-                            className="bg-red-500 h-1 w-3/5 rounded-md"
+                            className="bg-green-500 h-1 w-full rounded-md"
                             aria-valuemax={100}
                             aria-valuemin={0}
-                            aria-valuenow={60}
+                            aria-valuenow={100}
                             role="progress"
                           ></div>
                         </div>

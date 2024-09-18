@@ -15,7 +15,7 @@ export default function PageVisit() {
           </button>
         </div>
         <div className="overflow-x-auto">
-          <table className="table-auto bg-white shadow-md w-full rounded-md">
+          <table className="table-auto overflow-hidden bg-white shadow-md w-full rounded-md">
             <thead className="relative">
               <tr className="bg-gray-50">
                 <th className="uppercase text-left">Page name</th>

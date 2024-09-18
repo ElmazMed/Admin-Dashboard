@@ -12,7 +12,7 @@ export default function SocialTraffic() {
           </button>
         </div>
         <div className="overflow-x-auto">
-          <table className="table-auto bg-white w-full shadow-md rounded-md">
+          <table className="table-auto overflow-hidden bg-white w-full shadow-md rounded-md">
             <thead className="relative">
               <tr className="bg-gray-50">
                 <th className="uppercase text-left">Referral</th>
