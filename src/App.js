@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import UserProfile from "./pages/UserProfile";
 import { UserContext } from "./components/UserContext";
 import { useState } from "react";
+import Support from "./pages/Support";
+import Tables from "./pages/Tables";
 
 export default function App() {
   const [user, setUser] = useState({
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Home />} />
           <Route path="/user-profile" element={<UserProfile />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/tables" element={<Tables />} />
         </Routes>
       </UserContext.Provider>
     </>

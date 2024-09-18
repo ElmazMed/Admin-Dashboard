@@ -30,6 +30,21 @@ td {
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid rgba(205, 205, 205, 0.579);
 }
+
+.projects-table {
+  background-color: #172b4d;
+}
+
+.projects-table thead tr {
+  background-color: #1c345d;
+}
+
+.projects-table th {
+  color: #4276c1;
+}
+.projects-table td {
+  color: #ffff;
+}
 form input,
 textarea {
   box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);

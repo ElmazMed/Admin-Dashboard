@@ -81,7 +81,10 @@ export default function Nav() {
                   User Profile
                 </li>
               </Link>
-              <Link className="flex items-center gap-4 text-red-600">
+              <Link
+                to="/tables"
+                className="flex items-center gap-4 text-red-600"
+              >
                 <FaListUl />
 
                 <li className="text-gray-500 hover:text-black transition-all">
@@ -89,7 +92,10 @@ export default function Nav() {
                 </li>
               </Link>
 
-              <Link className="flex items-center gap-4 text-indigo-600">
+              <Link
+                to="/support"
+                className="flex items-center gap-4 text-indigo-600"
+              >
                 <MdOutlineContactSupport />
 
                 <li className="text-gray-500 hover:text-black transition-all">
