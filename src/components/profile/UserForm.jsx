@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { UserContext } from "../UserContext";
 
 export default function UserForm() {
-  const user = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   return (
     <>
       <div>
@@ -25,6 +25,7 @@ export default function UserForm() {
                 <label>Username</label>
                 <input
                   value={user.userName}
+                  onChange={(e) => setUser(e.target.value)}
                   type="text"
                   className="p-3 rounded-md outline-none border-0 "
                 />
@@ -33,6 +34,7 @@ export default function UserForm() {
                 <label>Email address</label>
                 <input
                   value={user.email}
+                  onChange={(e) => setUser(e.target.value)}
                   type="email"
                   className="p-3 rounded-md outline-none border-0"
                 />
@@ -43,6 +45,7 @@ export default function UserForm() {
                 <label>First name</label>
                 <input
                   value={user.firstName}
+                  onChange={(e) => setUser(e.target.value)}
                   type="text"
                   className="p-3 rounded-md outline-none border-0"
                 />
@@ -51,6 +54,7 @@ export default function UserForm() {
                 <label>Last name</label>
                 <input
                   value={user.lastName}
+                  onChange={(e) => setUser(e.target.value)}
                   type="text"
                   className="p-3 rounded-md outline-none border-0"
                 />
@@ -67,6 +71,7 @@ export default function UserForm() {
               <label>Address</label>
               <input
                 value={user.address}
+                onChange={(e) => setUser(e.target.value)}
                 type="text"
                 className="p-3 rounded-md outline-none border-0"
               />
@@ -76,6 +81,7 @@ export default function UserForm() {
                 <label>City</label>
                 <input
                   value={user.city}
+                  onChange={(e) => setUser(e.target.value)}
                   type="text"
                   className="p-3 rounded-md outline-none border-0"
                 />
@@ -84,6 +90,7 @@ export default function UserForm() {
                 <label>Country</label>
                 <input
                   value={user.country}
+                  onChange={(e) => setUser(e.target.value)}
                   type="text"
                   className="p-3 rounded-md outline-none border-0"
                 />
@@ -92,6 +99,7 @@ export default function UserForm() {
                 <label>Postal code</label>
                 <input
                   value={user.postalCode}
+                  onChange={(e) => setUser(e.target.value)}
                   type="number"
                   className="p-3 rounded-md outline-none border-0"
                 />
@@ -108,6 +116,7 @@ export default function UserForm() {
               <label>About me</label>
               <textarea
                 value={user.bio}
+                onChange={(e) => setUser(e.target.value)}
                 type="number"
                 className="p-3 rounded-md outline-none border-0"
               />

@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import userImg from "../../assets/pexels-justin-shaifer-501272-1222271.jpg";
-import { UserContext } from "../UserContext";
+
 export default function UserInfo() {
-  const user = useContext(UserContext);
   return (
     <>
       <div className="user-card bg-white rounded-md shadow-md p-6 flex items-center flex-col gap-4">
@@ -25,16 +24,17 @@ export default function UserInfo() {
         </div>
         <div className="flex flex-col">
           <h2 className="text-center text-slate-600 font-medium mb-2">
-            {`${user.firstName} ${user.lastName}`}
+            {`Mohamed Elmazgour`}
           </h2>
           <span className="text-center opacity-70 text-sm">
-            {`${user.city}, ${user.country}`}
+            {`Casablanca, Morroco`}
           </span>
-          <h3 className="mt-7 text-slate-600 text-center">{`${user.statu}`}</h3>
+          <h3 className="mt-7 text-slate-600 text-center">{`Full-Stack - Web Developer
+`}</h3>
         </div>
         <hr className="w-full border-t-1 border-gray-200 my-4" />
         <p className="text-center opacity-60 leading-7 font-light">
-          {`${user.bio}`}
+          {`I thrive on turning ideas into digital magic, blending tech savvy with a touch of artistry. I welcome challenges and thrive on problem-solving.`}
         </p>
       </div>
     </>

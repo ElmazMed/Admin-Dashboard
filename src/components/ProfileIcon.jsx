@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { TbLogout2 } from "react-icons/tb";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaRegSun } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
 import userImg from "../assets/pexels-justin-shaifer-501272-1222271.jpg";
-import { UserContext } from "./UserContext";
 
 export default function ProfileIcon() {
   const [visible, setVisible] = useState("none");
+  const [theme, setTheme] = useState("light");
   const menuRef = useRef(null);
-  const user = useContext(UserContext);
   const handleUserBtn = (e) => {
     e.stopPropagation();
     setVisible(visible === "none" ? "block" : "none");
@@ -25,6 +26,16 @@ export default function ProfileIcon() {
       window.removeEventListener("click", handleClickOutside);
     };
   }, []);
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
   return (
     <>
       <div className="z-30">
@@ -36,21 +47,34 @@ export default function ProfileIcon() {
           <div className="icon">
             <img src={userImg} alt="user" className="rounded-full w-8 h-8 " />
           </div>
-          <span className="text-white sm:block hidden">{`${user.firstName} ${user.lastName}`}</span>
+          <span className="text-white sm:block hidden">{`Mohamed Elmazgour`}</span>
         </button>
         <div
           ref={menuRef}
-          className="menu bg-white p-3 rounded-md absolute shadow-md sm:top-10 top-20 w-52 right-0 transition-all"
+          className="menu dark:bg-blue-950 bg-white p-3 rounded-md absolute shadow-md sm:top-10 top-20 w-52 right-0 transition-all"
           style={{ display: visible }}
         >
           <span className="text-xs text-slate-700 ">Welcome!</span>
           <hr />
           <ul className="flex flex-col gap-3 mt-4">
-            <button className="text-gray-700 hover:bg-gray-100 rounded-sm text-start p-2 transition-all">
-              <li>Dark theme</li>
+            <button
+              onClick={toggleTheme}
+              className="dark:text-white text-gray-700 hover:bg-gray-100 rounded-sm text-start p-2 transition-all"
+            >
+              <li className="flex items-center gap-1">
+                {theme === "light" ? (
+                  <>
+                    <BsFillMoonStarsFill /> Dark theme
+                  </>
+                ) : (
+                  <>
+                    <FaRegSun /> Light theme
+                  </>
+                )}
+              </li>
             </button>
 
-            <button className=" text-gray-700 hover:bg-gray-100 rounded-sm text-start p-2 transition-all">
+            <button className="text-gray-700 hover:bg-gray-100 rounded-sm text-start p-2 transition-all">
               <li className="flex items-center gap-1">
                 <TbLogout2 /> Log out
               </li>
