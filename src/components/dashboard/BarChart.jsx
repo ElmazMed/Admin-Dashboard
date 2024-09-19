@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { ThemeContext } from "../ThemeContext";
 
 ChartJS.register(
   CategoryScale,
@@ -20,6 +21,7 @@ ChartJS.register(
 );
 
 export default function BarChart() {
+  const { theme } = useContext(ThemeContext);
   const data = {
     labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [
@@ -52,9 +54,13 @@ export default function BarChart() {
           display: false,
         },
         stacked: true,
+        ticks: {
+          color: theme === "light" ? "#5A5A5A" : "#FFFFFF",
+        },
       },
       y: {
         ticks: {
+          color: theme === "light" ? "#5A5A5A" : "#FFFFFF",
           beginAtZero: true,
           padding: 10,
           callback: function (value) {
@@ -78,12 +84,16 @@ export default function BarChart() {
   return (
     <>
       <div
-        className="bg-white shadow-md sm:p-8 p-4 rounded-md"
+        className="bg-white dark:bg-blue-950 shadow-md sm:p-8 p-4 rounded-md"
         style={{ height: "33rem" }}
       >
         <div>
-          <span className="uppercase text-sm text-gray-500">Performance</span>
-          <h2 className="text-black text-xl mb-16">Total orders</h2>
+          <span className="uppercase text-sm dark:text-white text-gray-500">
+            Performance
+          </span>
+          <h2 className="text-black dark:text-white text-xl mb-16">
+            Total orders
+          </h2>
         </div>
         <div>
           <Bar

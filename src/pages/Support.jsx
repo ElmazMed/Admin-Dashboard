@@ -6,7 +6,7 @@ export default function Support() {
       <div className="sm:flex">
         <Nav />
         <div className="w-full sm:p-8 p-4">
-          <div className="bg-white shadow-md p-4 rounded-md">
+          <div className="bg-white dark:bg-blue-950 shadow-md p-4 rounded-md">
             <h1
               className="uppercase my-5 font-medium"
               style={{ color: "#8898aa" }}

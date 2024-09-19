@@ -9,22 +9,24 @@ import Search from "./Search";
 export default function Cards() {
   return (
     <>
-      <section className="bg-sky-500 sm:h-96 h-custom-h sm:p-8 p-4 flex flex-col gap-16">
+      <section className="bg-sky-500 dark:bg-blue-900 sm:h-96 h-custom-h sm:p-8 p-4 flex flex-col gap-16">
         <Search />
         <div className="cards flex flex-wrap gap-4 justify-between items-center ">
-          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
+          <div className="card dark:bg-blue-950 bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
-                  <h5 className="uppercase text-gray-500">Traffic</h5>
-                  <span>350,896</span>
+                  <h5 className="uppercase dark:text-white text-gray-500">
+                    Traffic
+                  </h5>
+                  <span className="dark:text-white">350,896</span>
                 </div>
                 <div className="rounded-full w-12 h-12 p-2 bg-red-600 flex items-center justify-center">
                   <FaChartColumn className="text-white text-lg" />
                 </div>
               </div>
 
-              <p className="flex gap-2 text-gray-500">
+              <p className="flex gap-2 dark:text-white text-gray-500">
                 <span className="flex items-center text-green-500">
                   <FaArrowUp />
                   3.48%
@@ -34,19 +36,21 @@ export default function Cards() {
             </div>
           </div>
 
-          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
+          <div className="card dark:bg-blue-950 bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
-                  <h5 className="uppercase text-gray-500">New users</h5>
-                  <span>2,356</span>
+                  <h5 className="uppercase dark:text-white text-gray-500">
+                    New users
+                  </h5>
+                  <span className="dark:text-white">2,356</span>
                 </div>
                 <div className="rounded-full w-12 h-12 p-2 bg-orange-500 flex items-center justify-center">
                   <FaChartPie className="text-white text-lg" />
                 </div>
               </div>
 
-              <p className="flex gap-2 text-gray-500">
+              <p className="flex gap-2 dark:text-white text-gray-500">
                 <span className="flex items-center text-red-500">
                   <FaArrowDown />
                   3.48%
@@ -56,19 +60,21 @@ export default function Cards() {
             </div>
           </div>
 
-          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
+          <div className="card dark:bg-blue-950 bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
-                  <h5 className="uppercase text-gray-500">Sales</h5>
-                  <span>929</span>
+                  <h5 className="uppercase dark:text-white text-gray-500">
+                    Sales
+                  </h5>
+                  <span className="dark:text-white">929</span>
                 </div>
                 <div className="rounded-full w-12 h-12 p-2 bg-yellow-400 flex items-center justify-center">
                   <FaUsers className="text-white text-lg" />
                 </div>
               </div>
 
-              <p className="flex gap-2 text-gray-500">
+              <p className="flex gap-2 dark:text-white text-gray-500">
                 <span className="flex items-center text-red-500">
                   <FaArrowDown />
                   1.10%
@@ -78,19 +84,21 @@ export default function Cards() {
             </div>
           </div>
 
-          <div className="card bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
+          <div className="card dark:bg-blue-950 bg-white shadow-md p-4 rounded-md sm:w-72 w-full">
             <div className="card-body">
               <div className="flex justify-between mb-5">
                 <div>
-                  <h5 className="uppercase text-gray-500">Performance</h5>
-                  <span>49,15%</span>
+                  <h5 className="uppercase dark:text-white text-gray-500">
+                    Performance
+                  </h5>
+                  <span className="dark:text-white">49,15%</span>
                 </div>
                 <div className="rounded-full w-12 h-12 p-2 bg-cyan-400 flex items-center justify-center">
                   <FaPercentage className="text-white text-lg" />
                 </div>
               </div>
 
-              <p className="flex gap-2 text-gray-500">
+              <p className="flex gap-2 dark:text-white text-gray-500">
                 <span className="flex items-center text-green-500">
                   <FaArrowUp />
                   12%

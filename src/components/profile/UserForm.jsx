@@ -6,13 +6,10 @@ export default function UserForm() {
   return (
     <>
       <div>
-        <div className="bg-white p-6 rounded-t-md shadow-md">
-          <h3>My account</h3>
+        <div className="bg-white dark:bg-blue-900 p-6 rounded-t-md shadow-md">
+          <h3 className="dark:text-white">My account</h3>
         </div>
-        <div
-          style={{ backgroundColor: "#f7fafc" }}
-          className="rounded-b-md p-6"
-        >
+        <div className="rounded-b-md p-6 dark:bg-blue-950 user-form-container">
           <form className="relative">
             <h4
               className="uppercase my-5 font-medium"

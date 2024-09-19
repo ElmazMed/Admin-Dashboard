@@ -16,7 +16,7 @@ export default function Nav() {
   );
   return (
     <>
-      <div className=" mobile-menu bg-white w-full p-6 flex justify-between sm:hidden items-center">
+      <div className=" mobile-menu dark:bg-blue-950 bg-white w-full p-6 flex justify-between sm:hidden items-center">
         <button
           className="text-3xl text-gray-400"
           type="button"
@@ -39,7 +39,7 @@ export default function Nav() {
             : "hidden"
         }
       >
-        <div className="sm:fixed flex flex-col sm:w-2/12 w-full justify-between bg-white shadow-md sm:h-screen">
+        <div className="sm:fixed flex flex-col sm:w-2/12 w-full justify-between dark:bg-blue-950 bg-white shadow-md sm:h-screen">
           <div className="sm:p-8 p-4">
             <div className="logo sm:mb-20 flex justify-between sm:block mb-7">
               <h1 className="text-3xl sm:text-center text-sky-500 font-bold uppercase">
@@ -67,7 +67,7 @@ export default function Nav() {
                 className="flex items-center gap-4 text-sky-500"
               >
                 <CgScreen />
-                <li className="text-gray-500 hover:text-black transition-all">
+                <li className="text-gray-500 dark:text-white hover:text-black transition-all">
                   Dashboard
                 </li>
               </Link>
@@ -77,7 +77,7 @@ export default function Nav() {
               >
                 <FaUser />
 
-                <li className="text-gray-500 hover:text-black transition-all">
+                <li className="text-gray-500 dark:text-white hover:text-black transition-all">
                   User Profile
                 </li>
               </Link>
@@ -87,7 +87,7 @@ export default function Nav() {
               >
                 <FaListUl />
 
-                <li className="text-gray-500 hover:text-black transition-all">
+                <li className="text-gray-500 dark:text-white hover:text-black transition-all">
                   Tables
                 </li>
               </Link>
@@ -98,17 +98,17 @@ export default function Nav() {
               >
                 <MdOutlineContactSupport />
 
-                <li className="text-gray-500 hover:text-black transition-all">
+                <li className="text-gray-500 dark:text-white hover:text-black transition-all">
                   Support
                 </li>
               </Link>
             </ul>
           </div>
-          <div className="bg-gray-50 p-5">
-            <Link className="flex items-center gap-4 text-violet-700">
+          <div className="bg-gray-50 dark:bg-blue-800 p-5">
+            <Link className="flex items-center gap-4 dark:text-white text-violet-700">
               <IoIosRocket />
 
-              <li className="list-none font-light text-black">
+              <li className="list-none font-light dark:text-white text-black">
                 Upgrade to PRO
               </li>
             </Link>

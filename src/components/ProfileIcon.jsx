@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
 import { TbLogout2 } from "react-icons/tb";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaRegSun } from "react-icons/fa6";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 import userImg from "../assets/pexels-justin-shaifer-501272-1222271.jpg";
 
 export default function ProfileIcon() {
   const [visible, setVisible] = useState("none");
-  const [theme, setTheme] = useState("light");
+  const { theme, setTheme } = useContext(ThemeContext);
   const menuRef = useRef(null);
   const handleUserBtn = (e) => {
     e.stopPropagation();
@@ -54,12 +54,14 @@ export default function ProfileIcon() {
           className="menu dark:bg-blue-950 bg-white p-3 rounded-md absolute shadow-md sm:top-10 top-20 w-52 right-0 transition-all"
           style={{ display: visible }}
         >
-          <span className="text-xs text-slate-700 ">Welcome!</span>
+          <span className="text-xs text-slate-700 dark:text-white ">
+            Welcome!
+          </span>
           <hr />
           <ul className="flex flex-col gap-3 mt-4">
             <button
               onClick={toggleTheme}
-              className="dark:text-white text-gray-700 hover:bg-gray-100 rounded-sm text-start p-2 transition-all"
+              className="dark:text-white text-gray-700 dark:hover:bg-blue-900 hover:bg-gray-100 rounded-sm text-start p-2 transition-all"
             >
               <li className="flex items-center gap-1">
                 {theme === "light" ? (
@@ -74,7 +76,7 @@ export default function ProfileIcon() {
               </li>
             </button>
 
-            <button className="text-gray-700 hover:bg-gray-100 rounded-sm text-start p-2 transition-all">
+            <button className="dark:text-white text-gray-700 dark:hover:bg-blue-900 hover:bg-gray-100 rounded-sm text-start p-2 transition-all">
               <li className="flex items-center gap-1">
                 <TbLogout2 /> Log out
               </li>

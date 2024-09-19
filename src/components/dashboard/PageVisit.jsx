@@ -5,8 +5,8 @@ export default function PageVisit() {
   return (
     <>
       <div className="table-content">
-        <div className="table-head flex justify-between items-center bg-white shadow-md rounded-t-md">
-          <h3 className="font-medium text-lg">Page visits</h3>
+        <div className="table-head flex justify-between items-center dark:bg-blue-950 bg-white shadow-md rounded-t-md">
+          <h3 className="font-medium text-lg dark:text-white">Page visits</h3>
           <button
             type="button"
             className="text-white text-sm bg-indigo-500 px-2 h-9 font-medium rounded-md shadow-md"
@@ -15,9 +15,9 @@ export default function PageVisit() {
           </button>
         </div>
         <div className="overflow-x-auto">
-          <table className="table-auto overflow-hidden bg-white shadow-md w-full rounded-md">
+          <table className="table-auto overflow-hidden dark:bg-blue-950 bg-white shadow-md w-full rounded-b-md">
             <thead className="relative">
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-50 dark:bg-blue-950">
                 <th className="uppercase text-left">Page name</th>
                 <th className="uppercase text-left">Visitors</th>
                 <th className="uppercase text-left">Unique users</th>

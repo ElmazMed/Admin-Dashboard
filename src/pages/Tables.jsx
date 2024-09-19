@@ -23,7 +23,7 @@ export default function Tables() {
               <h3 className="font-medium text-white text-lg">Card table</h3>
             </div>
             <div className="overflow-auto">
-              <table className="projects-table overflow-hidden table-auto shadow-md w-full rounded-md">
+              <table className="projects-table overflow-hidden table-auto shadow-md w-full rounded-b-md">
                 <thead className="relative">
                   <tr className="bg-indigo-900">
                     <th className="uppercase flex text-left">Projects</th>
