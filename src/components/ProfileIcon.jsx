@@ -47,7 +47,7 @@ export default function ProfileIcon() {
           <div className="icon">
             <img src={userImg} alt="user" className="rounded-full w-8 h-8 " />
           </div>
-          <span className="text-white sm:block hidden">{`Mohamed Elmazgour`}</span>
+          <span className="text-white lg:block hidden">{`Mohamed Elmazgour`}</span>
         </button>
         <div
           ref={menuRef}

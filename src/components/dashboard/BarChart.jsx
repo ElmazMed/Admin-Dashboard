@@ -83,10 +83,7 @@ export default function BarChart() {
 
   return (
     <>
-      <div
-        className="bg-white dark:bg-blue-950 shadow-md sm:p-8 p-4 rounded-md"
-        style={{ height: "33rem" }}
-      >
+      <div className="bg-white dark:bg-blue-950 h-chart-h shadow-md sm:p-8 p-4 rounded-md">
         <div>
           <span className="uppercase text-sm dark:text-white text-gray-500">
             Performance

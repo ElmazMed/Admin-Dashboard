@@ -76,10 +76,7 @@ export default function LineChart() {
   };
   return (
     <>
-      <div
-        className="bg-blue-950 sm:p-8 p-4 rounded-md"
-        style={{ height: "33rem" }}
-      >
+      <div className="bg-blue-950 sm:p-8 sm:h-chart-h h-96 p-4 rounded-md">
         <div className="flex justify-between mb-10">
           <div>
             <span className="uppercase text-sm text-gray-300">overview</span>

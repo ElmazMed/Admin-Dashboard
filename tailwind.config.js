@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   darkMode: "class",
@@ -14,7 +15,9 @@ module.exports = {
     },
     extend: {
       height: {
-        "custom-h": "40rem",
+        "sm-h": "40rem",
+        "md-h": "29rem",
+        "chart-h": "33rem",
       },
     },
   },

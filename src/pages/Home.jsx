@@ -5,7 +5,7 @@ import Dashboard from "./Dashboard";
 export default function Home() {
   return (
     <>
-      <main className="md:flex relative">
+      <main className="lg:flex relative">
         <Nav />
         <div className="w-full">
           <Cards />

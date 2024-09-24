@@ -12,11 +12,11 @@ import ProfileIcon from "../components/ProfileIcon";
 
 export default function Nav() {
   const [isMenuVisible, setIsMenuVisible] = useState(
-    window.innerWidth < 640 ? false : true
+    window.innerWidth < 975 ? false : true
   );
   return (
     <>
-      <div className=" mobile-menu dark:bg-blue-950 bg-white w-full p-6 flex justify-between sm:hidden items-center">
+      <div className=" mobile-menu dark:bg-blue-950 bg-white w-full p-6 flex justify-between lg:hidden items-center">
         <button
           className="text-3xl text-gray-400"
           type="button"
@@ -35,25 +35,25 @@ export default function Nav() {
       <nav
         className={
           isMenuVisible
-            ? "sm:overflow-y-auto sm:w-2/12 w-11/12 sm:mr-10 absolute sm:top-0 top-6 left-0 right-0 mx-auto sm:mx-0 sm:relative z-30"
+            ? "sm:overflow-y-auto lg:w-2/12 w-11/12 lg:mr-8 absolute lg:top-0 top-6 left-0 right-0 mx-auto lg:mx-0 lg:relative z-30"
             : "hidden"
         }
       >
-        <div className="sm:fixed flex flex-col sm:w-2/12 w-full justify-between dark:bg-blue-950 bg-white shadow-md sm:h-screen">
-          <div className="sm:p-8 p-4">
-            <div className="logo sm:mb-20 flex justify-between sm:block mb-7">
-              <h1 className="text-3xl sm:text-center text-sky-500 font-bold uppercase">
+        <div className="lg:fixed flex flex-col lg:w-2/12 w-full justify-between dark:bg-blue-950 bg-white shadow-md lg:h-screen">
+          <div className="lg:p-8 p-4">
+            <div className="logo lg:mb-20 flex justify-between lg:block mb-7">
+              <h1 className="text-3xl lg:text-center text-sky-500 font-bold uppercase">
                 Admin.
               </h1>
               <button
-                className="text-3xl sm:hidden text-gray-400"
+                className="text-3xl lg:hidden text-gray-400"
                 type="button"
                 onClick={() => setIsMenuVisible(false)}
               >
                 <AiOutlineClose />
               </button>
             </div>
-            <div className="mobile-search sm:hidden flex justify-between items-center bg-white border-2 border-gray-300 rounded-sm w-full p-2 mb-8">
+            <div className="mobile-search lg:hidden flex justify-between items-center bg-white border-2 border-gray-300 rounded-lg w-full p-2 mb-8">
               <input
                 type="text"
                 placeholder="Search"
