@@ -1,3 +1,5 @@
+// th, td, tr of the table are styled in the index.css file
+
 export default function SocialTraffic() {
   return (
     <>

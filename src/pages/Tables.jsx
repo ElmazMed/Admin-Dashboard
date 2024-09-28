@@ -1,22 +1,22 @@
-import { IoIosArrowRoundDown, IoIosArrowRoundUp } from "react-icons/io";
 import Cards from "../components/Cards";
 import Nav from "../components/Nav";
 import icon from "../assets/magnetic.png";
 import userImg from "../assets/pexels-justin-shaifer-501272-1222271.jpg";
 
+// th, td, tr of the table are styled in the index.css file
+
 export default function Tables() {
   return (
     <>
-      <div className="sm:flex">
+      <div className="lg:flex">
         <Nav />
         <div className="w-full">
           <Cards />
 
           <div className="table-content sm:-mt-20 -mt-14 sm:p-8 p-4">
             <div
-              className="table-head flex justify-between items-center shadow-md rounded-t-md"
+              className="table-head flex justify-between items-center shadow-md rounded-t-md bg-[#172b4d]"
               style={{
-                backgroundColor: "#172b4d",
                 borderBottom: "1px solid #4276c1",
               }}
             >

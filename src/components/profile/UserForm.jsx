@@ -17,7 +17,7 @@ export default function UserForm() {
             >
               User information
             </h4>
-            <div className="flex sm:flex-row flex-col gap-5 sm:p-4">
+            <div className="flex lg:flex-row flex-col gap-5 sm:p-4">
               <div className="flex w-full flex-col">
                 <label>Username</label>
                 <input
@@ -37,7 +37,7 @@ export default function UserForm() {
                 />
               </div>
             </div>
-            <div className="flex sm:flex-row flex-col gap-5 sm:p-4">
+            <div className="flex lg:flex-row flex-col gap-5 sm:p-4">
               <div className="flex  w-full flex-col">
                 <label>First name</label>
                 <input
@@ -73,7 +73,7 @@ export default function UserForm() {
                 className="p-3 rounded-md outline-none border-0"
               />
             </div>
-            <div className="flex sm:flex-row flex-col gap-5 sm:p-4">
+            <div className="flex lg:flex-row flex-col gap-5 sm:p-4">
               <div className="flex flex-col">
                 <label>City</label>
                 <input

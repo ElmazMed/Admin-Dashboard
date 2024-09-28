@@ -7,7 +7,7 @@ import SocialTraffic from "../components/dashboard/SocialTraffic";
 export default function Dashboard() {
   return (
     <>
-      <div className="container sm:-mt-20 -mt-14 lg:px-8 px-4">
+      <div className=" sm:-mt-20 -mt-14 lg:px-8 px-4">
         <div className="flex flex-wrap">
           <div className="lg:w-2/3 w-full lg:pr-4 mb-7 lg:mb-0">
             <LineChart />

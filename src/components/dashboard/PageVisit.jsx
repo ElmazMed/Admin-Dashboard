@@ -1,6 +1,8 @@
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { IoIosArrowRoundDown } from "react-icons/io";
 
+// th, td, tr of the table are styled in the index.css file
+
 export default function PageVisit() {
   return (
     <>

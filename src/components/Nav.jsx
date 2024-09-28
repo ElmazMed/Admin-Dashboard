@@ -35,7 +35,7 @@ export default function Nav() {
       <nav
         className={
           isMenuVisible
-            ? "sm:overflow-y-auto lg:w-2/12 w-11/12 lg:mr-8 absolute lg:top-0 top-6 left-0 right-0 mx-auto lg:mx-0 lg:relative z-30"
+            ? "sm:overflow-y-auto lg:w-2/12 w-11/12 lg:mr-8 absolute lg:top-0 top-6 left-0 right-0 mx-auto lg:mx-0 lg:relative z-50"
             : "hidden"
         }
       >

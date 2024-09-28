@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 export default function Support() {
   return (
     <>
-      <div className="sm:flex">
+      <div className="lg:flex">
         <Nav />
         <div className="w-full sm:p-8 p-4">
           <div className="bg-white dark:bg-blue-950 shadow-md p-4 rounded-md">

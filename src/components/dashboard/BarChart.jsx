@@ -38,6 +38,7 @@ export default function BarChart() {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         display: false,
@@ -92,14 +93,8 @@ export default function BarChart() {
             Total orders
           </h2>
         </div>
-        <div>
-          <Bar
-            data={data}
-            options={options}
-            height={437}
-            width={408}
-            style={{ height: "350px", width: "327px" }}
-          />
+        <div className="relative w-full h-[350px]">
+          <Bar data={data} options={options} />
         </div>
       </div>
     </>

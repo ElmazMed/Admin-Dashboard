@@ -39,6 +39,7 @@ export default function LineChart() {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         display: false,
@@ -76,7 +77,7 @@ export default function LineChart() {
   };
   return (
     <>
-      <div className="bg-blue-950 sm:p-8 sm:h-chart-h h-96 p-4 rounded-md">
+      <div className="bg-blue-950 sm:p-8 h-chart-h p-4 rounded-md">
         <div className="flex justify-between mb-10">
           <div>
             <span className="uppercase text-sm text-gray-300">overview</span>
@@ -97,7 +98,7 @@ export default function LineChart() {
             </button>
           </div>
         </div>
-        <div>
+        <div className="relative w-full h-[370px]">
           <Line data={data} options={options} />
         </div>
       </div>

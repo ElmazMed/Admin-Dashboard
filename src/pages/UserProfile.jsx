@@ -9,7 +9,7 @@ import UserInfo from "../components/profile/UserInfo";
 export default function UserProfile() {
   return (
     <>
-      <main className="sm:flex">
+      <main className="lg:flex">
         <Nav />
 
         <div className="w-full">
@@ -33,11 +33,11 @@ export default function UserProfile() {
             </div>
             <div className="overlay bg-blue-950 absolute h-full w-full bg-opacity-80 top-0 left-0 -z-10"></div>
           </div>
-          <div className="flex sm:flex-row flex-col-reverse sm:p-8 p-4 gap-5 z-30 relative -mt-32">
-            <div className="sm:w-8/12">
+          <div className="flex sm:flex-row flex-col-reverse lg:p-8 p-4 gap-5 z-30 relative ">
+            <div className="lg:w-8/12 md:w-7/12">
               <UserForm />
             </div>
-            <div className="sm:w-1/3">
+            <div className="lg:w-1/3 md:w-5/12">
               <UserInfo />
             </div>
           </div>
